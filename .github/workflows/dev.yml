@@ -29,5 +29,4 @@ jobs:
         with:
           BRANCH: dev # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
-          CLEAN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
