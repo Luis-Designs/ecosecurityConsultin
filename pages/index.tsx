@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <p>Piero es un crack:D</p>
+        <p>Ya salió :D</p>
       </main>
     </>
   )
