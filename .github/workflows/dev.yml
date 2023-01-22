@@ -1,11 +1,11 @@
-name: Deploy in GitHub Pages
+name: Deploy to GitHub Pages
 on:
   push:
-    tags:
-      - dev-v*
+    branches:
+      - dev
 jobs:
   deploy-dev:
-    name: deploy dev
+    name: Deploy to GitHub Pages
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -27,7 +27,8 @@ jobs:
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: s0/git-publish-subdir-action@develop
         with:
-          REPO: git@github.com:Luis-Designs/ecosecurityConsultin.git
+          REPO: self
           BRANCH: dev # The branch the action should deploy to.
-          FOLDER: out # The folder the action should deploy.
-          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FOLDER: ./out # The folder the action should deploy.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TARGET_DIR: www
