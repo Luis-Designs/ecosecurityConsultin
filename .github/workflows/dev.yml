@@ -27,7 +27,8 @@ jobs:
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: JamesIves/github-pages-deploy-action@3.6.2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: self
           BRANCH: dev # The branch the action should deploy to.
-          FOLDER: ./out # The folder the action should deploy.
+          FOLDER: out # The folder the action should deploy.
           CLEAN: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
