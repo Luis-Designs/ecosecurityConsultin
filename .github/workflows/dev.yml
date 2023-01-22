@@ -27,7 +27,7 @@ jobs:
         # https://github.com/JamesIves/github-pages-deploy-action
         uses: s0/git-publish-subdir-action@develop
         with:
-          REPO: self
+          REPO: git@github.com:Luis-Designs/ecosecurityConsultin.git
           BRANCH: dev # The branch the action should deploy to.
           FOLDER: ./out # The folder the action should deploy.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
