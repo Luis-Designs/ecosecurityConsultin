@@ -1,14 +1,16 @@
 /** @type {import('next').NextConfig} */
 const isGithubActions = process.env.GITHUB_ACTIONS
-const isProduction = process.env.ENVIROMENT_SLUG === 'production'
+// const isProduction = process.env.ENVIROMENT_SLUG === 'production'
 let assetPrefix = ''
 let basePath = ''
 
 if (isGithubActions) {
-  const repo = isProduction ? '' : process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  // const repo = isProduction ? '' : process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
 
   assetPrefix = `/${repo}/`
-  basePath =  isProduction ? '' : `/${repo}`
+  // basePath =  isProduction ? '' : `/${repo}`
+  basePath =  `/${repo}`
 }
 
 const nextConfig = {
