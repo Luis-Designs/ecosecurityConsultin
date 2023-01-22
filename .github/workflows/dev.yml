@@ -1,8 +1,8 @@
 name: Deploy in GitHub Pages
 on:
   push:
-    branches:
-      - dev
+    tags:
+      - dev-v*
 jobs:
   deploy-dev:
     name: deploy dev
