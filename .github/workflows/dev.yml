@@ -1,3 +1,4 @@
+name: Deploy in GitHub Pages
 on:
   push:
     tags:
