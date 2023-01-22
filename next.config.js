@@ -2,7 +2,7 @@
 const isGithubActions = process.env.GITHUB_ACTIONS
 // const isProduction = process.env.ENVIROMENT_SLUG === 'production'
 let assetPrefix = ''
-let basePath = '/'
+let basePath = ''
 
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
