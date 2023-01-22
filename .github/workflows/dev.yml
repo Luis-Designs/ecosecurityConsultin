@@ -25,8 +25,8 @@ jobs:
 
       - name: Deploy
         # https://github.com/JamesIves/github-pages-deploy-action
-        uses: s0/git-publish-subdir-action@develop
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           BRANCH: dev # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
