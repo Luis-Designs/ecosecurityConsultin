@@ -3,8 +3,6 @@ on:
   push:
     tags:
       - dev-v*
-env:
-  ENVIROMENT_SLUG: production
 jobs:
   deploy-dev:
     name: deploy dev
