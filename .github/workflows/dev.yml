@@ -1,8 +1,8 @@
 name: Deploy in GitHub Pages
 on:
   push:
-    tags:
-      - dev-v*
+    branches:
+      - dev
 jobs:
   deploy-dev:
     name: deploy dev
@@ -28,7 +28,6 @@ jobs:
         uses: s0/git-publish-subdir-action@develop
         with:
           REPO: self
-          BRANCH: dev # The branch the action should deploy to.
-          FOLDER: out # The folder the action should deploy.
-          CLEAN: true
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: ./out # The folder the action should deploy.
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
