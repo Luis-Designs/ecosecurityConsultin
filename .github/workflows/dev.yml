@@ -25,11 +25,9 @@ jobs:
           yarn build
           yarn export
 
-      # - name: Deploy
-      #   # https://github.com/JamesIves/github-pages-deploy-action
-      #   uses: s0/git-publish-subdir-action@develop
-      #   env:
-      #     REPO: self
-      #     BRANCH: hostinger-dev
-      #     FOLDER: out
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        # https://github.com/JamesIves/github-pages-deploy-action
+        uses: s0/git-publish-subdir-action@develop
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_dir: ./out
