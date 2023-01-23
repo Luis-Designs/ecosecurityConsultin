@@ -10,7 +10,7 @@ if (isGithubActions) {
     : process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 
   assetPrefix = `/${repo}/`;
-  basePath = isProduction ? "" : `/${repo}`;
+  basePath = isProduction ? "/" : `/${repo}`;
 }
 
 const nextConfig = {
