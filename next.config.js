@@ -1,25 +1,25 @@
 /** @type {import('next').NextConfig} */
-const isGithubActions = process.env.GITHUB_ACTIONS
-const isProduction = process.env.ENVIROMENT_SLUG === 'production'
-let assetPrefix = ''
-let basePath = ''
+const isGithubActions = process.env.GITHUB_ACTIONS;
+// const isProduction = process.env.ENVIROMENT_SLUG === 'production'
+let assetPrefix = "";
+let basePath = "";
 
 if (isGithubActions) {
-  const repo = isProduction ? '' : process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
 
-  assetPrefix = `/${repo}/`
-  basePath =  isProduction ? '' : `/${repo}`
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
 }
 
 const nextConfig = {
-  images:{
-    unoptimized : true
+  images: {
+    unoptimized: true,
   },
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix,
   basePath,
-  trailingSlash: true
-}
+  trailingSlash: true,
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

@@ -82,6 +82,7 @@ export const HeaderSection = () => {
             position="relative"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
+            overflow="hidden"
             border={"1px solid red"}
             backgroundImage={`url(${slide.image})`}
           >
