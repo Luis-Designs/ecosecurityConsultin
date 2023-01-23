@@ -3,6 +3,8 @@ on:
   push:
     branches:
     - dev
+env:
+  ENVIROMENT_SLUG: production
 jobs:
   deploy-dev:
     name: deploy dev
