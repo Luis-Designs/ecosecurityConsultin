@@ -13,6 +13,7 @@ import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
 // And react-slick as our Carousel Lib
 import Slider from "react-slick";
 import { settings, slides } from "./config";
+import { HStack } from "@chakra-ui/react";
 
 export const HeaderSection = () => {
   // As we have used custom buttons, we need a reference variable to
@@ -77,31 +78,31 @@ export const HeaderSection = () => {
         {slides.map((slide, index) => (
           <Box
             key={index}
-            height={"6xl"}
+            height={"400px"}
             position="relative"
-            backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
+            border={"1px solid red"}
             backgroundImage={`url(${slide.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
-            <Container size="container.lg" height="400px" position="relative">
+            <HStack
+              height="100%"
+              justifyContent={{ base: "center", lg: "flex-start" }}
+              pl={{ base: 0, md: "10%" }}
+              border={"1px solid red"}
+            >
               <Stack
                 spacing={6}
-                w={"full"}
-                maxW={"lg"}
-                position="absolute"
-                top="50%"
-                transform="translate(0, -50%)"
+                maxW={{ lg: "480px" }}
+                border={"1px solid red"}
               >
-                <Heading fontSize={{ base: "3xl", md: "4xl", lg: "5xl" }}>
+                <Heading fontSize={{ base: "3xl", md: "4xl" }}>
                   {slide.title}
                 </Heading>
-                <Text fontSize={{ base: "md", lg: "lg" }} color="GrayText">
-                  {slide.text}
-                </Text>
+                <Text fontSize={{ base: "md", lg: "lg" }}>{slide.text}</Text>
               </Stack>
-            </Container>
+            </HStack>
           </Box>
         ))}
       </Slider>

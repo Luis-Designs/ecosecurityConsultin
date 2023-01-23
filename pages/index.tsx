@@ -9,7 +9,7 @@ export default function Home() {
       <DefaultLayout>
         <Stack as="main" gap={16} pb={8} px={8}>
           <HeaderSection />
-          <CustomProductsSection />
+          {/* <CustomProductsSection /> */}
           {/* <LogosSection />
           <FunctionsSection />
           <TematicsSection />
