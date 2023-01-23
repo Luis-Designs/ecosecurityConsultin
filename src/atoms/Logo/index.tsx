@@ -12,7 +12,7 @@ const Logo = () => {
         objectFit='cover'
         height='50%'
         alt="logo observatorio"
-        src="http://drive.google.com/uc?export=view&id=1_k2pc2Jt2-Po_UGTf3WadW2JrHpODNm5" />
+        src="https://drive.google.com/uc?export=view&id=1_k2pc2Jt2-Po_UGTf3WadW2JrHpODNm5" />
     </Link>
   )
 }
