@@ -1,12 +1,12 @@
-import { Box, Center, Flex, HStack, Stack, VStack } from "@chakra-ui/react";
-import { memo } from "react";
-import { menuItems } from "./config";
-import { useRenderPropsMenuItems } from "../../hooks";
+import { Box, Center, Flex, HStack, Stack, VStack } from '@chakra-ui/react';
+import { memo } from 'react';
+import { menuItems } from './config';
+import { useRenderPropsMenuItems } from '../../hooks';
 
-import ModeSwitcher from "../../components/ModeSwitcher";
-import Logo from "../../atoms/Logo";
-import style from "./style.module.css";
-import CustomMenu from "../../components/CustomMenu";
+import ModeSwitcher from '../../components/ModeSwitcher';
+import Logo from '../../atoms/Logo';
+import style from './style.module.css';
+import CustomMenu from '../../components/CustomMenu';
 
 const CustomNavBar = () => {
   const [handlerRenderMenuItems, handlerRenderMobileMenuItems] =
@@ -17,11 +17,11 @@ const CustomNavBar = () => {
       <Box>
         <Logo />
       </Box>
-      <HStack display={{ base: "none", md: "flex" }}>
+      <HStack display={{ base: 'none', md: 'flex' }}>
         {menuItems.map(handlerRenderMenuItems)}
         <ModeSwitcher />
       </HStack>
-      <HStack display={{ base: "flex", md: "none" }}>
+      <HStack display={{ base: 'flex', md: 'none' }}>
         <ModeSwitcher />
         <CustomMenu menuItems={menuItems.map(handlerRenderMobileMenuItems)} />
       </HStack>

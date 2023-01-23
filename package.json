@@ -2,6 +2,7 @@
   "name": "ecosecurity",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://luis-designs.github.io/ecosecurityConsultin",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

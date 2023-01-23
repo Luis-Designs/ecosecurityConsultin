@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Box,
   IconButton,
@@ -7,13 +7,13 @@ import {
   Heading,
   Text,
   Container,
-} from "@chakra-ui/react";
+} from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
-import { BiChevronRight, BiChevronLeft } from "react-icons/bi";
+import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
 // And react-slick as our Carousel Lib
-import Slider from "react-slick";
-import { settings, slides } from "./config";
-import { HStack } from "@chakra-ui/react";
+import Slider from 'react-slick';
+import { settings, slides } from './config';
+import { HStack } from '@chakra-ui/react';
 
 export const HeaderSection = () => {
   // As we have used custom buttons, we need a reference variable to
@@ -22,15 +22,15 @@ export const HeaderSection = () => {
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: "90%", md: "50%" });
-  const side = useBreakpointValue({ base: "30%", md: "40px" });
+  const top = useBreakpointValue({ base: '90%', md: '50%' });
+  const side = useBreakpointValue({ base: '30%', md: '40px' });
 
   return (
     <Box
-      position={"relative"}
-      height={"400px"}
-      width={"full"}
-      overflow={"hidden"}
+      position={'relative'}
+      height={'400px'}
+      width={'full'}
+      overflow={'hidden'}
       color="white"
     >
       {/* CSS files for react-slick */}
@@ -48,12 +48,12 @@ export const HeaderSection = () => {
       {/* Left Icon */}
       <IconButton
         aria-label="left-arrow"
-        borderRadius={"50%"}
+        borderRadius={'50%'}
         variant="ghost"
         position="absolute"
         left={side}
         top={top}
-        transform={"translate(0%, -50%)"}
+        transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
@@ -62,12 +62,12 @@ export const HeaderSection = () => {
       {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
-        borderRadius={"50%"}
+        borderRadius={'50%'}
         variant="ghost"
         position="absolute"
         right={side}
         top={top}
-        transform={"translate(0%, -50%)"}
+        transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
@@ -78,30 +78,30 @@ export const HeaderSection = () => {
         {slides.map((slide, index) => (
           <Box
             key={index}
-            height={"400px"}
+            height={'400px'}
             position="relative"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
             overflow="hidden"
-            border={"1px solid red"}
+            border={'1px solid red'}
             backgroundImage={`url(${slide.image})`}
           >
             {/* This is the block you need to change, to customize the caption */}
             <HStack
               height="100%"
-              justifyContent={{ base: "center", lg: "flex-start" }}
-              pl={{ base: 0, md: "10%" }}
-              border={"1px solid red"}
+              justifyContent={{ base: 'center', lg: 'flex-start' }}
+              pl={{ base: 0, md: '10%' }}
+              border={'1px solid red'}
             >
               <Stack
                 spacing={6}
-                maxW={{ lg: "480px" }}
-                border={"1px solid red"}
+                maxW={{ lg: '480px' }}
+                border={'1px solid red'}
               >
-                <Heading fontSize={{ base: "3xl", md: "4xl" }}>
+                <Heading fontSize={{ base: '3xl', md: '4xl' }}>
                   {slide.title}
                 </Heading>
-                <Text fontSize={{ base: "md", lg: "lg" }}>{slide.text}</Text>
+                <Text fontSize={{ base: 'md', lg: 'lg' }}>{slide.text}</Text>
               </Stack>
             </HStack>
           </Box>
