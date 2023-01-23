@@ -2,6 +2,7 @@ export const menuItems = [
   { label: "INICIO", isCollapsable: false, href: "/" },
   {
     label: "NOSOTROS",
+    isCollapsable: false,
     href: "/about",
   },
   {

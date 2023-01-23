@@ -31,7 +31,7 @@ const CustomFooter = () => {
       <HStack justifyContent={"space-between"}>
         <VStack color="white" className={style.flexWrap}>
           {socialIcons.map(({ name, href }, index) => (
-            <Link key={`social-index${index}`} href={href} isExternal>
+            <Link key={`social-index${index}`} href={href}>
               {name}
             </Link>
           ))}
