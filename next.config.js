@@ -20,8 +20,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix,
+  source: basePath,
   trailingSlash: true,
-  basePath
 };
 
 module.exports = nextConfig;
