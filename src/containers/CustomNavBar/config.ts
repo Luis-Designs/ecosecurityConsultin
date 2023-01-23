@@ -1,20 +1,20 @@
 export const menuItems = [
-  { label: "INICIO", isCollapsable: false, href: "/" },
+  { label: 'INICIO', isCollapsable: false, href: '/' },
   {
-    label: "NOSOTROS",
+    label: 'NOSOTROS',
     isCollapsable: false,
-    href: "/about",
+    href: '/about',
   },
   {
-    label: "PRODUCTOS",
+    label: 'PRODUCTOS',
     isCollapsable: true,
-    href: "",
+    href: '',
     subLabels: [
-      { label: "GUANTES", href: "/guantes" },
-      { label: "CASCOS", href: "/cascos" },
+      { label: 'GUANTES', href: '/guantes' },
+      { label: 'CASCOS', href: '/cascos' },
     ],
   },
-  { label: "SERVICIOS", isCollapsable: false, href: "/services" },
-  { label: "CATÁLOGOS", isCollapsable: false, href: "/catalogo" },
-  { label: "CONTACTO", isCollapsable: false, href: "/catalogo" },
+  { label: 'SERVICIOS', isCollapsable: false, href: '/services' },
+  { label: 'CATÁLOGOS', isCollapsable: false, href: '/catalogo' },
+  { label: 'CONTACTO', isCollapsable: false, href: '/catalogo' },
 ];

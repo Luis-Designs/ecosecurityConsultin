@@ -1,4 +1,4 @@
-import { VStack, Box } from "@chakra-ui/react";
+import { VStack, Box } from '@chakra-ui/react';
 
 interface CustomCardProductProps {
   cardProductItems: JSX.Element | JSX.Element[];

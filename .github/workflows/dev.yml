@@ -1,33 +1,33 @@
-name: Deploy in GitHub Pages
-on:
-  push:
-    branches:
-    - dev
-jobs:
-  deploy-dev:
-    name: deploy dev
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
+# name: Deploy in GitHub Pages
+# on:
+#   push:
+#     branches:
+#     - dev
+# jobs:
+#   deploy-dev:
+#     name: deploy dev
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 16
-          cache: npm
+#       - uses: actions/setup-node@v2
+#         with:
+#           node-version: 16
+#           cache: npm
 
-      - run: npm install -g yarn
+#       - run: npm install -g yarn
 
-      - name: Build
-        run: |
-          yarn install --frozen-lockfile
-          yarn build
-          yarn export
+#       - name: Build
+#         run: |
+#           yarn install --frozen-lockfile
+#           yarn build
+#           yarn export
 
-      - name: Deploy
-        # https://github.com/JamesIves/github-pages-deploy-action
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: ./out # The folder the action should deploy.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Deploy
+#         # https://github.com/JamesIves/github-pages-deploy-action
+#         uses: s0/git-publish-subdir-action@develop
+#         env:
+#           REPO: self
+#           BRANCH: gh-pages # The branch the action should deploy to.
+#           FOLDER: ./out # The folder the action should deploy.
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,6 +1,6 @@
-import { ICardProductData } from "../../types/index";
-import { Box, Image, HStack, Text, VStack } from "@chakra-ui/react";
-import { useCallback } from "react";
+import { ICardProductData } from '../../types/index';
+import { Box, Image, HStack, Text, VStack } from '@chakra-ui/react';
+import { useCallback } from 'react';
 export const useRenderPropsCardProductItems = () => {
   const handlerRenderCardProductItems = useCallback(
     (cardProductItem: ICardProductData, index: number) => {
@@ -20,7 +20,7 @@ export const useRenderPropsCardProductItems = () => {
               alt={name}
               borderRadius="full"
             />
-            <VStack py={4} alignItems={"flex-start"}>
+            <VStack py={4} alignItems={'flex-start'}>
               <Text as="b">{name}</Text>
               <Text>{desc}</Text>
             </VStack>

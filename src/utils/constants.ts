@@ -1,3 +1,3 @@
-export const organizationName = "Ecosecurity Consultin";
+export const organizationName = 'Ecosecurity Consultin';
 
-export const descriptionOrganization = "Venta de extintores y consultorias.";
+export const descriptionOrganization = 'Venta de extintores y consultorias.';
