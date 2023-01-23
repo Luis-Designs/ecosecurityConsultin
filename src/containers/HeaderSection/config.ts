@@ -15,18 +15,18 @@ export const slides = [
     title: "HACEMOS TU EMPRESA MEJOR QUE OTRAS",
     text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
     image:
-      "https://www.diariosigloxxi.com/multimedia/images/img_965e233eef2de0ad7510a3e3485bdf13.jpg",
+      "http://drive.google.com/uc?export=view&id=1xmf69-dRDVBpEYkHc8z96vm7DOXnj4st",
   },
   {
     title: "Design Projects 2",
     text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
     image:
-      "https://eduardovillafuerteblog.files.wordpress.com/2020/08/banner-fire-safety.jpg?w=900&h=270",
+      "http://drive.google.com/uc?export=view&id=1NRa_Y6NghepkgtCQSEiMPhjUrdPQZFR4",
   },
   {
     title: "Design Projects 3",
     text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
     image:
-      "https://distribuidoranabad.com/wp-content/uploads/2018/04/proteccionparasutrabajo-nabad.jpg",
+      "http://drive.google.com/uc?export=view&id=1TRkKJ4nHRWtum03vxAS7ojhYmGwLJaxE",
   },
 ];
