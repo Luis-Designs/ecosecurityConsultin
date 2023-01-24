@@ -68,12 +68,7 @@ export const HeaderSection = () => {
         <BiChevronRight size='40px' />
       </IconButton>
       {/* Slider */}
-      <Slider
-        {...settings}
-        // overflow={'hidden'}
-        border={'1px solid blue'}
-        ref={(slider) => setSlider(slider)}
-      >
+      <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {slides.map((slide, index) => (
           <Box
             key={index}
