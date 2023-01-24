@@ -20,7 +20,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix,
-  source: basePath,
+  basePath: basePath,
   trailingSlash: true,
 };
 
