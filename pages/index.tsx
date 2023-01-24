@@ -5,13 +5,11 @@ import CustomProductsSection from '../src/containers/CustomProductsSection/index
 
 export default function Home() {
   return (
-    <>
-      <DefaultLayout>
-        <Stack as='main' gap={16} pb={8} px={8}>
-          <HeaderSection />
-          <CustomProductsSection />
-        </Stack>
-      </DefaultLayout>
-    </>
+    <DefaultLayout>
+      <Stack as='main' gap={16} pb={8} px={8}>
+        <HeaderSection />
+        <CustomProductsSection />
+      </Stack>
+    </DefaultLayout>
   );
 }
