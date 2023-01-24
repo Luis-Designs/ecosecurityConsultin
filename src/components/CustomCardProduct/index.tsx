@@ -1,4 +1,4 @@
-import { VStack, Box } from '@chakra-ui/react';
+import { VStack, Box, HStack, Grid } from '@chakra-ui/react';
 
 interface CustomCardProductProps {
   cardProductItems: JSX.Element | JSX.Element[];
@@ -6,9 +6,19 @@ interface CustomCardProductProps {
 
 const CustomCardProduct = ({ cardProductItems }: CustomCardProductProps) => {
   return (
-    <VStack>
-      <Box width="100%">{cardProductItems}</Box>
-    </VStack>
+    <Grid
+      templateColumns={{
+        base: 'repeat(1, 1fr)',
+        md: 'repeat(2, 1fr)',
+        lg: 'repeat(2, 1fr)',
+      }}
+      py={4}
+      px={{base: 0, lg: 24}}
+      gap={6}
+      width='100%'
+    >
+      {cardProductItems}
+    </Grid>
   );
 };
 

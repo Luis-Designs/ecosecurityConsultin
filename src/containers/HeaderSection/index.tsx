@@ -26,78 +26,69 @@ export const HeaderSection = () => {
   const side = useBreakpointValue({ base: '30%', md: '40px' });
 
   return (
-    <Box
-      position={'relative'}
-      height={'400px'}
-      width={'full'}
-      overflow={'hidden'}
-      color="white"
-    >
+    <Box position={'relative'} height={'400px'} width={'full'} color='white'>
       {/* CSS files for react-slick */}
       <link
-        rel="stylesheet"
-        type="text/css"
-        charSet="UTF-8"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        rel='stylesheet'
+        type='text/css'
+        charSet='UTF-8'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
       />
       <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        rel='stylesheet'
+        type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
       />
       {/* Left Icon */}
       <IconButton
-        aria-label="left-arrow"
+        aria-label='left-arrow'
         borderRadius={'50%'}
-        variant="ghost"
-        position="absolute"
+        variant='ghost'
+        position='absolute'
         left={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}
       >
-        <BiChevronLeft size="40px" />
+        <BiChevronLeft size='40px' />
       </IconButton>
       {/* Right Icon */}
       <IconButton
-        aria-label="right-arrow"
+        aria-label='right-arrow'
         borderRadius={'50%'}
-        variant="ghost"
-        position="absolute"
+        variant='ghost'
+        position='absolute'
         right={side}
         top={top}
         transform={'translate(0%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickNext()}
       >
-        <BiChevronRight size="40px" />
+        <BiChevronRight size='40px' />
       </IconButton>
       {/* Slider */}
-      <Slider {...settings} ref={(slider) => setSlider(slider)}>
+      <Slider
+        {...settings}
+        // overflow={'hidden'}
+        border={'1px solid blue'}
+        ref={(slider) => setSlider(slider)}
+      >
         {slides.map((slide, index) => (
           <Box
             key={index}
             height={'400px'}
-            position="relative"
-            backgroundRepeat="no-repeat"
-            backgroundSize="cover"
-            overflow="hidden"
-            border={'1px solid red'}
+            backgroundRepeat='no-repeat'
+            backgroundSize='cover'
+            overflow='hidden'
             backgroundImage={`url(${slide.image})`}
           >
-            {/* This is the block you need to change, to customize the caption */}
             <HStack
-              height="100%"
+              height='100%'
               justifyContent={{ base: 'center', lg: 'flex-start' }}
               pl={{ base: 0, md: '10%' }}
-              border={'1px solid red'}
             >
-              <Stack
-                spacing={6}
-                maxW={{ lg: '480px' }}
-                border={'1px solid red'}
-              >
+              <Stack spacing={6} maxW={{ lg: '480px' }}>
                 <Heading fontSize={{ base: '3xl', md: '4xl' }}>
                   {slide.title}
                 </Heading>

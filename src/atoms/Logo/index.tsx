@@ -8,11 +8,12 @@ const Logo = () => {
     <Link href={'/'}>
       <Image
         filter={colorLogo}
-        boxSize={150}
+        boxSize={120}
         objectFit='cover'
         height='50%'
         alt="logo observatorio"
-        src="http://drive.google.com/uc?export=view&id=1_k2pc2Jt2-Po_UGTf3WadW2JrHpODNm5" />
+        src="http://drive.google.com/uc?export=view&id=18enu7ShGT9irJ0Pw43nu0ykPvUSqvlC5" />
+        
     </Link>
   )
 }

@@ -7,14 +7,12 @@ function CustomProductsSection() {
   const [handlerRenderCardProductItems] = useRenderPropsCardProductItems();
   return (
     <Stack>
-      <Text fontSize="2xl" textAlign={'center'}>
+      <Text fontSize='2xl' textAlign={'center'}>
         Nuestros productos
       </Text>
-      <HStack>
-        <CustomCardProduct
-          cardProductItems={cardProductItems.map(handlerRenderCardProductItems)}
-        />
-      </HStack>
+      <CustomCardProduct
+        cardProductItems={cardProductItems.map(handlerRenderCardProductItems)}
+      />
     </Stack>
   );
 }

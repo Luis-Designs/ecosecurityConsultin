@@ -7,13 +7,9 @@ export default function Home() {
   return (
     <>
       <DefaultLayout>
-        <Stack as="main" gap={16} pb={8} px={8}>
+        <Stack as='main' gap={16} pb={8} px={8}>
           <HeaderSection />
-          {/* <CustomProductsSection /> */}
-          {/* <LogosSection />
-          <FunctionsSection />
-          <TematicsSection />
-          <PowerBISection /> */}
+          <CustomProductsSection />
         </Stack>
       </DefaultLayout>
     </>
