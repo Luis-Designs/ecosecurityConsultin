@@ -10,5 +10,4 @@ const About = () => {
     </DefaultLayout>
   );
 };
-
 export default About;

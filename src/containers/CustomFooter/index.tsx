@@ -1,4 +1,3 @@
-import { memo } from 'react';
 import { Stack, Box, HStack, VStack, Text } from '@chakra-ui/react';
 import Logo from '../../atoms/Logo/index';
 import style from './style.module.css';
@@ -8,7 +7,10 @@ import { FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
 
 const socialIcons = [
-  { name: <FaFacebook />, href: '/' },
+  {
+    name: <FaFacebook />,
+    href: 'https://www.facebook.com/profile.php?id=100087957067728',
+  },
   { name: <FaWhatsapp />, href: '/' },
 ];
 
@@ -32,7 +34,7 @@ const CustomFooter = () => {
         <HStack justifyContent={'space-between'}>
           <VStack color='white' className={style.flexWrap}>
             {socialIcons.map(({ name, href }, index) => (
-              <Link key={`social-index${index}`} href={href}>
+              <Link key={`social-index${index}`} href={href} target='_blank'>
                 {name}
               </Link>
             ))}
@@ -59,4 +61,4 @@ const CustomFooter = () => {
   );
 };
 
-export default memo(CustomFooter);
+export default CustomFooter;

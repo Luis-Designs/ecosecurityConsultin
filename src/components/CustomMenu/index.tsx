@@ -10,9 +10,9 @@ const CustomMenu = ({ menuItems }: CustomMenuProps) => {
     <Menu>
       <MenuButton
         display={{ base: 'block', md: 'none' }}
-        height='4rem'
-        width='4em'
-        icon={<HamburgerIcon height='3rem' width='3rem' />}
+        height='3rem'
+        width='3em'
+        icon={<HamburgerIcon height='2.5rem' width='2.5rem' />}
         variant='outline'
         aria-label='Options'
         as={IconButton}

@@ -1,5 +1,4 @@
 import { Box, Center, Flex, HStack, Stack, VStack } from '@chakra-ui/react';
-import { memo } from 'react';
 import { menuItems } from './config';
 import { useRenderPropsMenuItems } from '../../hooks';
 
@@ -28,4 +27,4 @@ const CustomNavBar = () => {
     </HStack>
   );
 };
-export default memo(CustomNavBar);
+export default CustomNavBar;

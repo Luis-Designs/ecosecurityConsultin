@@ -1,6 +1,6 @@
 import DefaultLayout from '../src/views/DefaultLayout';
 import CustomServicesSection from '../src/containers/CustomServicesSection/index';
-const Services = () => {
+export const Services = () => {
   return (
     <DefaultLayout>
       <CustomServicesSection />
