@@ -26,7 +26,7 @@ const CustomFooter = () => {
           <HStack
             color='white'
             className={style.flexWrap}
-            display={{ base: 'none', lg: 'block' }}
+            display={{ base: 'none', lg: 'flex' }}
           >
             {menuItems.map(handlerRenderMenuItems)}
           </HStack>

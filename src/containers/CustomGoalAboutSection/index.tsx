@@ -4,7 +4,7 @@ import { memo } from 'react';
 export const CustomGoalAboutSection = () => {
   return (
     <HStack w='100%' flexDirection={{ base: 'column', lg: 'row' }}>
-      <VStack px={6}>
+      <VStack px={{ lg: 6 }}>
         {goalItemsSection.map((goalItem, index) => (
           <Box key={`goal-item-about-section-${index}`} mb={4}>
             <Text fontWeight='bold' fontSize='2xl' mb={2}>
