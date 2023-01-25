@@ -2,26 +2,30 @@ import CustomNavBar from '../../containers/CustomNavBar';
 import CustomFooter from '../../containers/CustomFooter';
 import { memo, PropsWithChildren } from 'react';
 import Head from 'next/head';
-import { descriptionOrganization, organizationName } from '../../utils/constants';
+import {
+  descriptionOrganization,
+  organizationName,
+} from '../../utils/constants';
+import { Stack } from '@chakra-ui/react';
 
-const keywords = [
-  'Consultorías'
-]
+const keywords = ['Consultorías'];
 
 const DefaultLayout = ({ children }: PropsWithChildren) => {
   return (
     <>
       <Head>
         <title>{organizationName}</title>
-        <meta name="description" content={descriptionOrganization} />
-        <meta name="keywords" content={String(keywords)} />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name='description' content={descriptionOrganization} />
+        <meta name='keywords' content={String(keywords)} />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <CustomNavBar />
-      {children}
+      <Stack as='main' gap={16} py={8} px={8}>
+        {children}
+      </Stack>
       <CustomFooter />
     </>
-  )
-}
+  );
+};
 
-export default memo(DefaultLayout)
+export default memo(DefaultLayout);

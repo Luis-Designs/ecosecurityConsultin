@@ -83,7 +83,7 @@ export const HeaderSection = () => {
               justifyContent={{ base: 'center', lg: 'flex-start' }}
               pl={{ base: 0, md: '10%' }}
             >
-              <Stack spacing={6} maxW={{ lg: '480px' }}>
+              <Stack spacing={6} maxW={{ lg: '480px' }} px={{ base: 8, lg: 0 }}>
                 <Heading fontSize={{ base: '3xl', md: '4xl' }}>
                   {slide.title}
                 </Heading>

@@ -12,7 +12,12 @@ const CustomNavBar = () => {
     useRenderPropsMenuItems();
 
   return (
-    <HStack className={style.menu} as='nav' backgroundColor='Background'>
+    <HStack
+      className={style.menu}
+      as='nav'
+      backgroundColor='Background'
+      height={{ base: '64px', md: '80px' }}
+    >
       <Box>
         <Logo />
       </Box>

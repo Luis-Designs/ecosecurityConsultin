@@ -4,9 +4,7 @@ import { CustomGoalAboutSection } from '../src/containers/CustomGoalAboutSection
 const About = () => {
   return (
     <DefaultLayout>
-      <Stack as='main' gap={16} py={8} px={8}>
-        <CustomGoalAboutSection />
-      </Stack>
+      <CustomGoalAboutSection />
     </DefaultLayout>
   );
 };
