@@ -3,18 +3,24 @@ import CustomCardProduct from '../../components/CustomCardProduct/index';
 import { cardProductItems } from './config';
 import { useRenderPropsCardProductItems } from './hooks';
 
-function CustomProductsSection() {
+function CustomProductsSection(categorie: string) {
+  console.log(categorie);
+
   const [handlerRenderCardProductItems] = useRenderPropsCardProductItems();
   return (
-    <Stack>
-      <Text fontSize='2xl' textAlign={'center'}>
-        Nuestros productos
-      </Text>
-      <CustomCardProduct
-        cardProductItems={cardProductItems.map(handlerRenderCardProductItems)}
-      />
-    </Stack>
+    <CustomCardProduct
+      cardProductItems={cardProductItems
+        .filter((cardProductItem) => cardProductItem.categorie === categorie)
+        .map(handlerRenderCardProductItems)}
+    />
   );
 }
 
-export default CustomProductsSection;
+export const typeCategorie = {
+  gloves: function () {
+    return CustomProductsSection('gloves');
+  },
+  helmets: function () {
+    return CustomProductsSection('helmets');
+  },
+};

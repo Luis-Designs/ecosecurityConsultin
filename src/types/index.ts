@@ -17,7 +17,13 @@ export interface IMenuItem {
     href: string;
   }[];
 }
+export interface ICardCategorieData {
+  name: string;
+  image: string;
+  desc: string;
+}
 export interface ICardProductData {
+  categorie: string;
   name: string;
   image: string;
   desc: string;

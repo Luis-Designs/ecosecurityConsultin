@@ -10,8 +10,8 @@ export const menuItems = [
     isCollapsable: true,
     href: '',
     subLabels: [
-      { label: 'GUANTES', href: '/guantes' },
-      { label: 'CASCOS', href: '/cascos' },
+      { label: 'GUANTES', href: '/products/gloves' },
+      { label: 'CASCOS', href: '/products/helmets' },
     ],
   },
   { label: 'SERVICIOS', isCollapsable: false, href: '/services' },

@@ -1,10 +1,10 @@
 import { VStack, Box, HStack, Grid } from '@chakra-ui/react';
 
-interface CustomCardProductProps {
-  cardProductItems: JSX.Element | JSX.Element[];
+interface CustomCardCategorieProps {
+  cardCategorieItems: JSX.Element | JSX.Element[];
 }
 
-const CustomCardProduct = ({ cardProductItems }: CustomCardProductProps) => {
+const CustomCardCategorie = ({ cardCategorieItems }: CustomCardCategorieProps) => {
   return (
     <Grid
       templateColumns={{
@@ -12,13 +12,14 @@ const CustomCardProduct = ({ cardProductItems }: CustomCardProductProps) => {
         md: 'repeat(2, 1fr)',
         lg: 'repeat(2, 1fr)',
       }}
+      py={4}
       px={{base: 0, lg: 24}}
       gap={6}
       width='100%'
     >
-      {cardProductItems}
+      {cardCategorieItems}
     </Grid>
   );
 };
 
-export default CustomCardProduct;
+export default CustomCardCategorie;

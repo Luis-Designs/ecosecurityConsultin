@@ -20,7 +20,7 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <CustomNavBar />
-      <Stack as='main' gap={16} py={8} px={8}>
+      <Stack as='main' gap={8} py={8} px={8}>
         {children}
       </Stack>
       <CustomFooter />
