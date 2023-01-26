@@ -15,6 +15,6 @@ export const menuItems = [
     ],
   },
   { label: 'SERVICIOS', isCollapsable: false, href: '/services' },
-  { label: 'CATÁLOGOS', isCollapsable: false, href: '/catalogo' },
-  { label: 'CONTACTO', isCollapsable: false, href: '/catalogo' },
+  { label: 'CATÁLOGOS', isCollapsable: false, href: '/catalogue' },
+  { label: 'CONTACTO', isCollapsable: false, href: '/cantact' },
 ];
