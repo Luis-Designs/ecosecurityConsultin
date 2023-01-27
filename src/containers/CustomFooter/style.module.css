@@ -1,0 +1,9 @@
+.flexWrap {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flexWrap ul,
+.flexWrap li {
+  background-color: #1D1D1B;
+}

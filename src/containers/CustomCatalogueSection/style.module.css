@@ -1,0 +1,16 @@
+.box {
+    border: 1px solid blue;
+    /* BROWSER DEFINITION */
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+
+    /* W3C DEFINITION */
+    display: flex;
+    display: inline-flex;
+}

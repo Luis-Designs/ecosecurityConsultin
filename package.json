@@ -2,6 +2,7 @@
   "name": "ecosecurity",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://luis-designs.github.io/ecosecurityConsultin",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,15 +11,28 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@next/font": "13.1.4",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
-    "eslint": "8.32.0",
-    "eslint-config-next": "13.1.4",
-    "next": "13.1.4",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
+    "framer-motion": "^7.6.19",
+    "next": "13.0.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-slick": "^0.29.0",
     "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": "^16"
+  },
+  "devDependencies": {
+    "@types/react-slick": "^0.23.10"
   }
 }
