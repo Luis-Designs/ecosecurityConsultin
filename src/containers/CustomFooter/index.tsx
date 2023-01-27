@@ -8,10 +8,13 @@ import Link from 'next/link';
 
 const socialIcons = [
   {
-    name: <FaFacebook />,
+    name: <FaFacebook fontSize='30px' />,
     href: 'https://www.facebook.com/profile.php?id=100087957067728',
   },
-  { name: <FaWhatsapp />, href: '/' },
+  {
+    name: <FaWhatsapp fontSize='30px' />,
+    href: '/',
+  },
 ];
 
 const CustomFooter = () => {
@@ -32,12 +35,19 @@ const CustomFooter = () => {
           </HStack>
         </HStack>
         <HStack justifyContent={'space-between'}>
-          <VStack color='white' className={style.flexWrap}>
-            {socialIcons.map(({ name, href }, index) => (
-              <Link key={`social-index${index}`} href={href} target='_blank'>
-                {name}
-              </Link>
-            ))}
+          <VStack
+            color='white'
+            className={style.flexWrap}
+            alignItems='flex-start'
+          >
+            <Text>Siguenos en nuestras redes sociales:</Text>
+            <HStack>
+              {socialIcons.map(({ name, href }, index) => (
+                <Link key={`social-index${index}`} href={href} target='_blank'>
+                  {name}
+                </Link>
+              ))}
+            </HStack>
           </VStack>
           <HStack
             color='white'

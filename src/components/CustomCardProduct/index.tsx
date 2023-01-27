@@ -1,4 +1,4 @@
-import { VStack, Box, HStack, Grid } from '@chakra-ui/react';
+import { Grid } from '@chakra-ui/react';
 
 interface CustomCardProductProps {
   cardProductItems: JSX.Element | JSX.Element[];

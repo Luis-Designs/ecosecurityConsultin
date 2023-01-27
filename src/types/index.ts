@@ -28,3 +28,9 @@ export interface ICardProductData {
   image: string;
   desc: string;
 }
+
+export interface ICardServiceData {
+  name: string;
+  image: string;
+  desc: string;
+}

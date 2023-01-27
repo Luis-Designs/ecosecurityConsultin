@@ -14,7 +14,7 @@ const CustomCatalogueSection = () => {
     <Stack flexDirection={{ base: 'column-reverse', lg: 'row' }}>
       <VStack
         width={{ base: '100%', lg: '50%' }}
-        height={{ base: '560px', md: '480px' }}
+        height={{ base: '560px', md:'380px',lg: '500px' }}
         alignItems='flex-start'
         px={{ base: 0, md: 4 }}
       >
@@ -24,20 +24,20 @@ const CustomCatalogueSection = () => {
         <Text fontWeight={800} fontSize={'2.5rem'}>
           ECOSECURITY CONSULTING
         </Text>
-        <Text color={'gray.800'} fontSize={'1.5rem'}>
+        <Text color={'green.500'} fontSize={'1.5rem'}>
           Hacemos tu empresa mejor que otras
         </Text>
-        <Text color={'gray.500'} fontSize={'1.5rem'}>
+        <Text color={'gray.400'} fontSize={'1.5rem'}>
           Venta y alquiler de articulos de seguridad industrial
         </Text>
-        <Text color={'gray.500'} fontSize={'1.5rem'} mb={8}>
+        <Text color={'gray.400'} fontSize={'1.5rem'} mb={8}>
           Homologados con altos estandares de calidad
         </Text>
         <HStack pt={{ base: '20px', lg: '80px' }}>
           <Link href='/'>
             <Text
               bg='green.500'
-              px={{ base: 20, lg: 32 }}
+              px={{ base: 16, lg: 32 }}
               py={3}
               rounded='lg'
               fontWeight='bold'
@@ -49,8 +49,9 @@ const CustomCatalogueSection = () => {
         </HStack>
       </VStack>
       <Image
-        w={{ base: '100%', lg: '50%' }}
-        height={{ base: '220px', md: '480px' }}
+        display={{ base: 'none', lg: 'block' }}
+        w={{ lg: '50%' }}
+        height={{ lg: '480px' }}
         rounded='lg'
         src='https://cuadernosdeseguridad.com/wp-content/uploads/2021/08/Tecnologia-movil-cuerpos-de-bomberos.jpg'
         alt='Calidad de Ecosecurity Consultin'
