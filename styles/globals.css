@@ -33,6 +33,15 @@ a {
   margin-inline-start: 0px;
 }
 
+.css-emqivb>*:not(style)~*:not(style) {
+  margin-top: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  margin-bottom: 0px;
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
