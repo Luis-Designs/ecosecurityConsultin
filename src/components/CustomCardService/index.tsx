@@ -10,7 +10,7 @@ const CustomCardService = ({ cardServiceItems }: CustomCardServiceProps) => {
       <Text fontSize='2xl' textAlign={'center'} mt={8}>
         Nuestros servicios
       </Text>
-      <Accordion defaultIndex={[0]} allowToggle>
+      <Accordion defaultIndex={[0]}>
         {cardServiceItems}
       </Accordion>
     </>

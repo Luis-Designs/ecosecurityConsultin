@@ -20,8 +20,15 @@ export const useRenderPropsCardServiceItems = () => {
         <AccordionItem key={`card-product-item-${index}`} w='100%'>
           <h2>
             <AccordionButton _expanded={{ bg: 'green.600', color: 'white' }}>
-              <Box as='span' flex='1' textAlign='left' fontWeight='bold'>
-                {name}
+              <Box
+                as='span'
+                flex='1'
+                textAlign='left'
+                fontWeight='bold'
+                fontSize={{ base: '18px', md: '20px' }}
+                paddingLeft={2}
+              >
+                {name.toUpperCase()}
               </Box>
               <AccordionIcon />
             </AccordionButton>
@@ -46,7 +53,7 @@ export const useRenderPropsCardServiceItems = () => {
                 alignItems={'flex-start'}
                 px={4}
               >
-                <Text fontSize={{ base: '1xl', md: '2xl' }}>{desc}</Text>
+                <Text fontSize={{ base: '16px', md: '18px' }}>{desc}</Text>
               </VStack>
             </HStack>
           </AccordionPanel>
