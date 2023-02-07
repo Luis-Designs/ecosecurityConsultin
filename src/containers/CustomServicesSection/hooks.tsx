@@ -53,7 +53,7 @@ export const useRenderPropsCardServiceItems = () => {
                 alignItems={'flex-start'}
                 px={4}
               >
-                <Text fontSize={{ base: '16px', md: '18px' }}>{desc}</Text>
+                <Text fontSize={{ base: '14px', md: '18px' }}>{desc}</Text>
               </VStack>
             </HStack>
           </AccordionPanel>
