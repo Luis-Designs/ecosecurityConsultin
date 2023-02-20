@@ -6,7 +6,6 @@ import {
   Stack,
   Heading,
   Text,
-  Container,
 } from '@chakra-ui/react';
 // Here we have used react-icons package for the icons
 import { BiChevronRight, BiChevronLeft } from 'react-icons/bi';
@@ -83,7 +82,12 @@ export const HeaderSection = () => {
               justifyContent={{ base: 'center', lg: 'flex-start' }}
               pl={{ base: 0, md: '10%' }}
             >
-              <Stack spacing={6} maxW={{ lg: '480px' }} px={{ base: 8, lg: 0 }}>
+              <Stack
+                spacing={6}
+                maxW={{ lg: '480px' }}
+                px={{ base: 8, lg: 2 }}
+                bgColor={'rgba(0,0,0,.5)'}
+              >
                 <Heading fontSize={{ base: '3xl', md: '4xl' }}>
                   {slide.title}
                 </Heading>
