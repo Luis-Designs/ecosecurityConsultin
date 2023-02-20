@@ -13,7 +13,7 @@ const socialIcons = [
   },
   {
     name: <FaWhatsapp fontSize='30px' />,
-    href: '/',
+    href: 'https://api.whatsapp.com/send?phone=51964200304',
   },
 ];
 

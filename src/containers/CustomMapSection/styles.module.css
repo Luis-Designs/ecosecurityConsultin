@@ -1,0 +1,11 @@
+.contMap {
+    height: 320px;
+    width: 500px;
+    margin: 4.5% 0;
+}
+
+@media screen and (max-width: 500px) {
+    .contMap {
+        width: 280px;
+    }
+}

@@ -1,14 +1,10 @@
-import { Image, Box, Text, HStack, VStack } from '@chakra-ui/react';
+import { Image, Box, Text, HStack } from '@chakra-ui/react';
+import Map from '../CustomMapSection';
 
 const CustomContactSection = () => {
   return (
-    <HStack flexDirection={{ base: 'column', md: 'row' }}>
-      <Image
-        src='http://drive.google.com/uc?export=view&id=1ogV4nKCIjUyReVV-GWiBiNVfDwhiqk4v'
-        alt='ecosecurity consulting map'
-        boxSize={{ md: '45%' }}
-        rounded='md'
-      />
+    <HStack flexDirection={{ base: 'column', md: 'row' }} justifyContent={'center'}>
+      <Map />
       <Box px={{ lg: 4 }} pt={{ base: 4, md: 0 }}>
         <Text fontSize={{ base: '18px', md: '20px' }}>
           <b>Oficina principal:</b> Calle. Ramón Castillo N.º 168 A.H. Villa

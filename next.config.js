@@ -21,7 +21,7 @@ const nextConfig = {
   swcMinify: true,
   assetPrefix,
   basePath: basePath,
-  trailingSlash: true,
+  trailingSlash: true
 };
 
 module.exports = nextConfig;

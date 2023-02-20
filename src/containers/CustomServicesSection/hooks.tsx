@@ -35,7 +35,7 @@ export const useRenderPropsCardServiceItems = () => {
           </h2>
           <AccordionPanel>
             <HStack
-              h={{ base: '420px', md: '320px', lg: '380px' }}
+              py={'4'}
               justifyContent='center'
             >
               <Image
@@ -50,10 +50,9 @@ export const useRenderPropsCardServiceItems = () => {
               <VStack
                 w={{ lg: '50%' }}
                 py={{ base: 0, md: 4 }}
-                alignItems={'flex-start'}
-                px={4}
+                px={{base: 2, md: 4, lg: 6}}
               >
-                <Text fontSize={{ base: '14px', sm: '16px', md: '20px' }}>
+                <Text fontSize={{ base: '16px', md: '20px' }}>
                   {desc}
                 </Text>
               </VStack>

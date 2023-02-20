@@ -1,5 +1,4 @@
-import { Stack, Text, HStack } from '@chakra-ui/react';
-import CustomCardProduct from '../../components/CustomCardProduct/index';
+import { Stack, Text } from '@chakra-ui/react';
 import { cardCategorieItems } from './config';
 import CustomCardCategorie from '../../components/CustomCardCategorie/index';
 import { useRenderPropsCardCategorieItems } from './hooks';
