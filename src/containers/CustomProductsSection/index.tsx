@@ -1,4 +1,3 @@
-import { Stack, Text, HStack } from '@chakra-ui/react';
 import CustomCardProduct from '../../components/CustomCardProduct/index';
 import { cardProductItems } from './config';
 import { useRenderPropsCardProductItems } from './hooks';
@@ -22,5 +21,17 @@ export const typeCategorie = {
   },
   helmets: function () {
     return CustomProductsSection('helmets');
+  },
+  auditiveProtectors: function () {
+    return CustomProductsSection('auditive-protectors');
+  },
+  stretchers: function () {
+    return CustomProductsSection('stretchers');
+  },
+  shoes: function () {
+    return CustomProductsSection('shoes');
+  },
+  others: function () {
+    return CustomProductsSection('others');
   },
 };

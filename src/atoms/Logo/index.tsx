@@ -11,8 +11,8 @@ const Logo = () => {
         boxSize={120}
         objectFit='cover'
         height='50%'
-        alt='logo observatorio'
-        src='http://drive.google.com/uc?export=view&id=18enu7ShGT9irJ0Pw43nu0ykPvUSqvlC5'
+        alt='logo eco security consulting'
+        src='https://res.cloudinary.com/dokwefr5i/image/upload/v1676911627/Eco%20Security%20Consulting/verde_x7uz6h.png'
       />
     </Link>
   );

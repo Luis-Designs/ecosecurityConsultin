@@ -20,7 +20,7 @@ export const useRenderPropsCardProductItems = () => {
               alt={name}
               borderRadius='full'
             />
-            <VStack alignItems={'flex-start'} px={'2.5'}>
+            <VStack alignItems={'flex-start'} px={'2'}>
               <Text as='b'>{name}</Text>
               <Text>{desc}</Text>
             </VStack>
