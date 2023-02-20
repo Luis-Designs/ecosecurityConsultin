@@ -6,6 +6,7 @@ import {
   Stack,
   VStack,
   Text,
+  Link,
 } from '@chakra-ui/react';
 import { menuItems } from './config';
 import { useRenderPropsMenuItems } from '../../hooks';
@@ -31,9 +32,9 @@ const CustomNavBar = () => {
       >
         <HStack px={8}>
           <FaPhone />
-          <Text>+51 949570005</Text>
+          <Text>949570005</Text>
           <FaWhatsapp fontSize='22px' />
-          <Text>+51 964200304</Text>
+          <Link href='https://api.whatsapp.com/send?phone=51964200304' target='_blank'>964200304</Link>
         </HStack>
         <HStack px={8} display={{ base: 'none', md: 'flex' }}>
           <FaEnvelope fontSize='20px' />

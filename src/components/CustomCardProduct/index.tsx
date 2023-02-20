@@ -10,7 +10,7 @@ const CustomCardProduct = ({ cardProductItems }: CustomCardProductProps) => {
       templateColumns={{
         base: 'repeat(1, 1fr)',
         md: 'repeat(2, 1fr)',
-        lg: 'repeat(2, 1fr)',
+        lg: 'repeat(3, 1fr)',
       }}
       px={{base: 0, lg: 24}}
       gap={6}

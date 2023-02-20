@@ -49,16 +49,17 @@ const CustomFooter = () => {
               ))}
             </HStack>
           </VStack>
-          <HStack
+          <VStack
             color='white'
-            className={style.flexWrap}
-            alignItems={'flex-start'}
+            w='50%'
+            alignItems={'end'}
+            flexDirection={'column'}
           >
-            <VStack>
-              <Text>Contactos: +51 949 570 005 / +51 964 200 304</Text>
-              <Text>Email: ecosecurit.consulting@gmail.com</Text>
-            </VStack>
-          </HStack>
+            <Text>
+              Contactos: 949570005 / 964200304
+            </Text>
+            <Text width={{base: '100%', md: 'initial'}}>Email: ecosecurit.consulting@gmail.com</Text>
+          </VStack>
         </HStack>
       </Stack>
       <HStack bg='Background'>

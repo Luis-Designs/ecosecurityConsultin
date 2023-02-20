@@ -12,15 +12,16 @@ export const useRenderPropsCardProductItems = () => {
           w='100%'
           boxShadow='0 0 4px green'
         >
-          <HStack h='180px'>
+          <HStack flexDirection={{ base: 'column' }}>
             <Image
+              py={'2'}
               boxSize='180px'
               objectFit='cover'
               src={image}
               alt={name}
               borderRadius='full'
             />
-            <VStack alignItems={'flex-start'} px={'2'}>
+            <VStack alignItems={'flex-start'} py={'4'} px={'2'}>
               <Text as='b'>{name}</Text>
               <Text>{desc}</Text>
             </VStack>

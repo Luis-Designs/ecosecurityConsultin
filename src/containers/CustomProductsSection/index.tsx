@@ -3,8 +3,6 @@ import { cardProductItems } from './config';
 import { useRenderPropsCardProductItems } from './hooks';
 
 function CustomProductsSection(categorie: string) {
-  console.log(categorie);
-
   const [handlerRenderCardProductItems] = useRenderPropsCardProductItems();
   return (
     <CustomCardProduct

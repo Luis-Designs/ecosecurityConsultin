@@ -18,10 +18,10 @@ const CustomCatalogueSection = () => {
         alignItems='flex-start'
         px={{ base: 0, md: 4 }}
       >
-        <Text fontWeight={600} fontSize={'2rem'}>
+        <Text fontWeight={600} fontSize={'2.5rem'}>
           Catálogo
         </Text>
-        <Text fontWeight={800} fontSize={'2.5rem'}>
+        <Text fontWeight={700} fontSize={'2.5rem'}>
           ECOSECURITY CONSULTING
         </Text>
         <Text color={'green.500'} fontSize={'1.5rem'}>
