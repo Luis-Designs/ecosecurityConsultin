@@ -2,7 +2,6 @@ import Head from 'next/head';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import style from './styles.module.css';
-import { HStack } from '@chakra-ui/react';
 
 const Map = () => {
   return (
@@ -17,7 +16,7 @@ const Map = () => {
         <script
           src='https://unpkg.com/leaflet@1.9.3/dist/leaflet.js'
           integrity='sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM='
-          crossorigin=''
+          crossOrigin=''
         ></script>
       </Head>
       <MapContainer
