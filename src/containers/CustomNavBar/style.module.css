@@ -3,6 +3,6 @@
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 2000;
   box-shadow: 0px 2px 12px -6px #1D1D1B;
 }
