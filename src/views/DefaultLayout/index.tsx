@@ -17,7 +17,6 @@ const DefaultLayout = ({ children }: PropsWithChildren) => {
         <title>{organizationName}</title>
         <meta name='description' content={descriptionOrganization} />
         <meta name='keywords' content={String(keywords)} />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <CustomNavBar />
       <Stack as='main' gap={8} py={8} px={8}>
