@@ -80,15 +80,16 @@ export const HeaderSection = () => {
             <HStack
               height='100%'
               justifyContent={{ base: 'center', lg: 'flex-start' }}
-              pl={{ base: 0, md: '10%' }}
+              pl={{ base: 0, lg: '10%' }}
             >
               <Stack
                 spacing={6}
-                maxW={{ lg: '480px' }}
+                w={{base: '100%', md: '60%', lg: '44%'}}
                 px={{ base: 8, lg: 2 }}
+                py={2}
                 bgColor={'rgba(0,0,0,.5)'}
               >
-                <Heading fontSize={{ base: '3xl', md: '4xl' }}>
+                <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }}>
                   {slide.title}
                 </Heading>
                 <Text fontSize={{ base: 'md', lg: 'lg' }}>{slide.text}</Text>
