@@ -17,7 +17,7 @@ export default function Document() {
           crossOrigin=''
           async
         ></script>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='./favicon.ico' />
       </Head>
       <body>
         <Main />
