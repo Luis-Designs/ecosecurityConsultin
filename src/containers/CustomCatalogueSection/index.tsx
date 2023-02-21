@@ -14,7 +14,7 @@ const CustomCatalogueSection = () => {
     <Stack flexDirection={{ base: 'column-reverse', lg: 'row' }}>
       <VStack
         width={{ base: '100%', lg: '50%' }}
-        height={{ base: '560px', md:'380px',lg: '500px' }}
+        height={{ base: '560px', md: '380px', lg: '500px' }}
         alignItems='flex-start'
         px={{ base: 0, md: 4 }}
       >
@@ -34,10 +34,13 @@ const CustomCatalogueSection = () => {
           Homologados con altos estandares de calidad
         </Text>
         <HStack pt={{ base: '20px', lg: '80px' }}>
-          <Link href='/'>
+          <Link
+            href='https://drive.google.com/file/d/1iAZmwzB7-iLq26ffoSsaYurNCUCxRnYn/view?usp=share_link'
+            target='_blanck'
+          >
             <Text
               bg='green.500'
-              px={{ base: 16, lg: 32 }}
+              px={{ base: 8, lg: 32 }}
               py={3}
               rounded='lg'
               fontWeight='bold'
